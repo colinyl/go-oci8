@@ -328,7 +328,7 @@ type DSN struct {
 	enableQMPlaceholders bool
 }
 
-func init() {
+func Load() {
 	sql.Register("oci8", &OCI8Driver{})
 }
 
